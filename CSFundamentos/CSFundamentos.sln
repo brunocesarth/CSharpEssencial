@@ -31,13 +31,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntradaDeDados", "EntradaDe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OperadoresAritmeticos", "OperadoresAritmeticos\OperadoresAritmeticos.csproj", "{E3F5E39A-4DBA-426E-9428-82420DC27BFB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InferenciaTipos1", "InferenciaTipos1\InferenciaTipos1.csproj", "{048D2F0A-5ACF-4D53-BE44-F79111E2A723}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InferenciaTipos1", "InferenciaTipos1\InferenciaTipos1.csproj", "{048D2F0A-5ACF-4D53-BE44-F79111E2A723}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperadoresAtribuicao", "OperadoresAtribuicao\OperadoresAtribuicao.csproj", "{22BFEE18-4C6B-421F-9EC9-CAE4978A4734}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OperadoresAtribuicao", "OperadoresAtribuicao\OperadoresAtribuicao.csproj", "{22BFEE18-4C6B-421F-9EC9-CAE4978A4734}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Constantes1", "Constantes1\Constantes1.csproj", "{E609D5BB-2C54-4750-BC0B-D9610E8F9207}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Constantes1", "Constantes1\Constantes1.csproj", "{E609D5BB-2C54-4750-BC0B-D9610E8F9207}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperadoresIncrementoDecremento", "OperadoresIncrementoDecremento\OperadoresIncrementoDecremento.csproj", "{07C3E5AC-E9DC-4366-9107-F487B32DF57A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OperadoresIncrementoDecremento", "OperadoresIncrementoDecremento\OperadoresIncrementoDecremento.csproj", "{07C3E5AC-E9DC-4366-9107-F487B32DF57A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperadoresRelacionais1", "OperadoresRelacionais1\OperadoresRelacionais1.csproj", "{D3CD283B-D554-4A4A-99B1-1DD715477A57}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +119,10 @@ Global
 		{07C3E5AC-E9DC-4366-9107-F487B32DF57A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07C3E5AC-E9DC-4366-9107-F487B32DF57A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07C3E5AC-E9DC-4366-9107-F487B32DF57A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3CD283B-D554-4A4A-99B1-1DD715477A57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3CD283B-D554-4A4A-99B1-1DD715477A57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3CD283B-D554-4A4A-99B1-1DD715477A57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3CD283B-D554-4A4A-99B1-1DD715477A57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
