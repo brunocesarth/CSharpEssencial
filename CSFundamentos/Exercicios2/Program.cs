@@ -1,12 +1,5 @@
 ﻿Console.WriteLine("Exercícios fase 2");
 
-Console.WriteLine("Digite um número:");
-int x1 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("digite mais um número:");
-int y1 = Convert.ToInt32(Console.ReadLine());
-
-string r = x
-
 // 1 - Declare as variáveis nome, idade e nota atribuindo os valores "Paulo", 17 e 7.5 e exiba a saída no formato: Aluno <nome> tem <idade> anos e nota <nota> usando a concatenção e a interpolação de strings.
 string nome = "Paulo";
 int idade = 17;
@@ -30,10 +23,10 @@ Console.Write($"Nota {nota}");
 
 4- Em qual conversão numérica você precisaria realizar o casting (convesão forçada) ? 
 ( ) int para long
-( ) double para long
-( ) double para float
-( ) decimal para float
-( ) long para int
+(x) double para long
+(x) double para float
+(x) decimal para float
+(x) long para int
 (X) double para decimal
 
 
@@ -64,7 +57,7 @@ Console.WriteLine(letra3 + "," + letra2 + "," + letra1);
 (F) var status = null;
 (V) object o = 12.45m;
 (V) string titulo = true.ToString(); 
-(V) A sequencia \t inclui uma tabulação vertical
+(F) A sequencia \t inclui uma tabulação vertical
 
 
 7- Escreva um programa para receber dois valores via teclado do tipo double e a seguir 
@@ -86,6 +79,13 @@ Console.WriteLine(valor1 % valor2);
 
 //8 - Faça um programa para calcular o resultado da fórmula de baskara dados os valores de a b e c .
 int a = 1, b = 12, c = -13;
+double x1, x2;
+
+x1 = Convert.ToDouble((-b + Math.Sqrt(Math.Pow(b, 2) - 4 * a * c)) / (2 * a));
+x2 = Convert.ToDouble((-b - Math.Sqrt(Math.Pow(b, 2) - 4 * a * c)) / (2 * a));
+
+Console.WriteLine(x1);
+Console.WriteLine(x2);
 
 // 9- Escreva um programa que receba um nome e uma senha via teclado. Nome é uma string e Senha é um inteiro. Se o nome for igual a ‘admin’ ou ‘maria’ e a senha for igual a ‘123’ então exiba a mensagem ‘Login feito com sucesso’ caso contrário exiba a mensagem ‘Login inválido’: (use o operador condicional ternário)
 
@@ -103,7 +103,7 @@ Console.WriteLine(r);
 a nomenclatura usada:
 (V) string? nome; é um exemplo de nullable reference type;
 (F) para x igual a 0 , Console.WriteLine(x++); imprime o valor 1
-(V) A ordem de precedência dos operadores lógicos é : ! , || e && (NOT, OR e AND)
+(F) A ordem de precedência dos operadores lógicos é : ! , || e && (NOT, OR e AND)
 (V) para y igual a 0 , Console.WriteLine(++y); imprime o valor 1
 (F) (10 % 2 == 0) ? “Par” : “Impar”; Vai retornar “Impar”
 (F) Para x=25 e y=5 , a expressão ( y >= x ) && ( y <= x ); retorna true;
@@ -116,4 +116,52 @@ a nomenclatura usada:
 11- Escreva um programa que recebe via teclado dois números inteiros x e y e imprima no 
 console se x é par ou não e se y é par ou não. Use o operador condicional ternário (? :)
  */
-int 
+Console.Write("Digite o x: ");
+int x3 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Digite o y: ");
+int y3 = Convert.ToInt32(Console.ReadLine());
+
+string rx = x3 % 2 == 0 ? "Par" : "Impar";
+string ry = y3 % 2 == 0 ? "Par" : "Impar";
+
+Console.WriteLine(rx);
+Console.WriteLine(ry);
+
+//12 - Crie um programa que receba um numero inteiro x via teclado e calcule e imprima no console o resultado das seguintes operações : (x ^ 2->x ao quadrado) (pi = 3.1415
+Console.Write("Digite o x: ");
+int x4 = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine(Math.Pow(x4, 2));
+Console.WriteLine(-6 + x4 * 5);
+Console.WriteLine((13 - 2) * x4);
+Console.WriteLine((x4 + -2) * (20 / x4));
+Console.WriteLine((12 + x4) / (x4 - 4));
+Console.WriteLine(3 * (Math.Pow(x4, 2) + x4 + 10));
+Console.WriteLine(Math.PI * Math.Pow(x4, 2));
+
+/*
+ 13- Considere o seguinte trecho de código:
+int y = 5 ;
+y = (y++)+y+(++y); ou y = y++ + y + ++y;
+Console.WriteLine(y);
+
+ */
+
+/* 
+ 14- Escreva um programa que solicite a temperatura em graus Celsius e converta para 
+Kelvin e Farhenheit usando as fórmulas a seguir:
+- Converter para Kelvin => K = C + 273 ;
+- Converter para Farhenheit => F = (C * 9) / 5 + 32 
+*/
+Console.Write("Digite a temperatura(Cº): ");
+double celsius = Convert.ToDouble(Console.ReadLine());
+double k = celsius + 273;
+double f = (celsius * 9) / 5 + 32;
+
+Console.WriteLine($"Kelvin: {k}");
+Console.WriteLine($"Fahrenheit: {f}");
+
+
+/*15 - Escolha a opção que representa a exibição do resultado para o código usando os operadores de decremento e incremento (pré e pós) 
+    (X) 5 2 2 2
+*/
