@@ -11,9 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3Estrutura_If_else_if", "3E
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4Estrutura_switch", "4Estrutura_switch\4Estrutura_switch.csproj", "{DB87322F-5340-4894-92F6-B7E34C1EDC41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5Estrutura_repeticao", "5Estrutura_repeticao\5Estrutura_repeticao.csproj", "{2F703460-861A-4BC8-BD52-819E35AAD8D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5Estrutura_repeticao", "5Estrutura_repeticao\5Estrutura_repeticao.csproj", "{2F703460-861A-4BC8-BD52-819E35AAD8D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6Estrutura_while", "6Estrutura_while\6Estrutura_while.csproj", "{D420D769-4960-4824-87E6-649BB1E0E181}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "6Estrutura_while", "6Estrutura_while\6Estrutura_while.csproj", "{D420D769-4960-4824-87E6-649BB1E0E181}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7Estrutura_do_while", "7Estrutura_do_while\7Estrutura_do_while.csproj", "{3E0C5D77-B1C9-4C19-90EE-27F5DBE2DFC2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{D420D769-4960-4824-87E6-649BB1E0E181}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D420D769-4960-4824-87E6-649BB1E0E181}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D420D769-4960-4824-87E6-649BB1E0E181}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E0C5D77-B1C9-4C19-90EE-27F5DBE2DFC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E0C5D77-B1C9-4C19-90EE-27F5DBE2DFC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E0C5D77-B1C9-4C19-90EE-27F5DBE2DFC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E0C5D77-B1C9-4C19-90EE-27F5DBE2DFC2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
