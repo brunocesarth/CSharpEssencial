@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4PassandoParametros", "4Pas
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5Construtores", "5Construtor\5Construtores.csproj", "{FEB05ACB-D01D-4385-9BF6-F11174FF5236}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6This", "6This\6This.csproj", "{ED4FE1CB-EB34-416F-996D-F33104DE0C4E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "6This", "6This\6This.csproj", "{ED4FE1CB-EB34-416F-996D-F33104DE0C4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7MetodosComRetorno", "7MetodosComRetorno\7MetodosComRetorno.csproj", "{667CCCBF-5C1A-4E57-91B3-6054021EF006}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{ED4FE1CB-EB34-416F-996D-F33104DE0C4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED4FE1CB-EB34-416F-996D-F33104DE0C4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED4FE1CB-EB34-416F-996D-F33104DE0C4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{667CCCBF-5C1A-4E57-91B3-6054021EF006}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{667CCCBF-5C1A-4E57-91B3-6054021EF006}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{667CCCBF-5C1A-4E57-91B3-6054021EF006}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{667CCCBF-5C1A-4E57-91B3-6054021EF006}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
