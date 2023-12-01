@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5Construtores", "5Construto
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "6This", "6This\6This.csproj", "{ED4FE1CB-EB34-416F-996D-F33104DE0C4E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7MetodosComRetorno", "7MetodosComRetorno\7MetodosComRetorno.csproj", "{667CCCBF-5C1A-4E57-91B3-6054021EF006}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7MetodosComRetorno", "7MetodosComRetorno\7MetodosComRetorno.csproj", "{667CCCBF-5C1A-4E57-91B3-6054021EF006}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8SobrecargaMetodos", "8SobrecargaMetodos\8SobrecargaMetodos.csproj", "{EDA254A0-D913-4011-85AE-7DAC3362DF75}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{667CCCBF-5C1A-4E57-91B3-6054021EF006}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{667CCCBF-5C1A-4E57-91B3-6054021EF006}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{667CCCBF-5C1A-4E57-91B3-6054021EF006}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDA254A0-D913-4011-85AE-7DAC3362DF75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDA254A0-D913-4011-85AE-7DAC3362DF75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDA254A0-D913-4011-85AE-7DAC3362DF75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDA254A0-D913-4011-85AE-7DAC3362DF75}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
