@@ -33,6 +33,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "14ParametrosOpcionais", "14
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15MetodosEstaticos", "15MetodosEstaticos\15MetodosEstaticos.csproj", "{19C64EA6-8754-4D40-BEAC-31CDB8D70B6D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16CamposEstaticos1", "16CamposEstaticos1\16CamposEstaticos1.csproj", "{3D64F274-0701-42A3-927E-4318AEF060D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17ExPraticoCampoEstatico", "17ExPraticoCampoEstatico\17ExPraticoCampoEstatico.csproj", "{8EE4A97C-2CAF-43E7-9F77-3194F03045A6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +103,14 @@ Global
 		{19C64EA6-8754-4D40-BEAC-31CDB8D70B6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19C64EA6-8754-4D40-BEAC-31CDB8D70B6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19C64EA6-8754-4D40-BEAC-31CDB8D70B6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D64F274-0701-42A3-927E-4318AEF060D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D64F274-0701-42A3-927E-4318AEF060D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D64F274-0701-42A3-927E-4318AEF060D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D64F274-0701-42A3-927E-4318AEF060D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EE4A97C-2CAF-43E7-9F77-3194F03045A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EE4A97C-2CAF-43E7-9F77-3194F03045A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EE4A97C-2CAF-43E7-9F77-3194F03045A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EE4A97C-2CAF-43E7-9F77-3194F03045A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
