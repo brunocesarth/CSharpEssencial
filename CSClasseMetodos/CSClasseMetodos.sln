@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16CamposEstaticos1", "16Cam
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17ExPraticoCampoEstatico", "17ExPraticoCampoEstatico\17ExPraticoCampoEstatico.csproj", "{8EE4A97C-2CAF-43E7-9F77-3194F03045A6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "18ConstrutorEstatico", "18ConstrutorEstatico\18ConstrutorEstatico.csproj", "{F11161ED-34DB-4DC4-849A-A0DE25B29B08}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{8EE4A97C-2CAF-43E7-9F77-3194F03045A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8EE4A97C-2CAF-43E7-9F77-3194F03045A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8EE4A97C-2CAF-43E7-9F77-3194F03045A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F11161ED-34DB-4DC4-849A-A0DE25B29B08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F11161ED-34DB-4DC4-849A-A0DE25B29B08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F11161ED-34DB-4DC4-849A-A0DE25B29B08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F11161ED-34DB-4DC4-849A-A0DE25B29B08}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
