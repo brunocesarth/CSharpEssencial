@@ -9,7 +9,7 @@ p1.Sexo = "feminino";
 
 Console.WriteLine($"{p1.Nome} {p1.Idade} {p1.Sexo}");
 
-Pessoa p2 = new ();
+Pessoa p2 = new();
 p2.Nome = "Manoel";
 p2.Idade = 23;
 p2.Sexo = "masculino";

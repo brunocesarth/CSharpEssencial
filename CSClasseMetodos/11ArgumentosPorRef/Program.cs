@@ -12,7 +12,7 @@ Console.ReadKey();
 
 
 public class Calculo
-{           
+{
     public void Dobrar(ref int y)
     {
         y *= 2;

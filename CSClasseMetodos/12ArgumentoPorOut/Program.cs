@@ -7,7 +7,7 @@ Circulo circulo = new();
 
 double circunferencia = circulo.CalculaAreaPerimetro(raio, out double area);
 Console.WriteLine("Perímetro da Circunferência " + circunferencia);
-Console.WriteLine("Área da Circunferência " +  area);
+Console.WriteLine("Área da Circunferência " + area);
 
 Console.ReadKey();
 
