@@ -33,12 +33,10 @@ cliente.Nome = "Maria";
 cliente.Idade = 19;
 
 Console.WriteLine($"{cliente.Nome} {cliente.Idade}");
-Console.WriteLine("Exemplo 2 - atribuição");
-
 
 Console.WriteLine();
+Console.WriteLine("Exemplo 2 - atribuição");
 
-Console.WriteLine("Exemplo 2");
 
 MinhaClasse mcls1 = new(), mcls2 = null;
 MinhaStruct mstr1 = new(), mstr2 = new();
