@@ -1,0 +1,139 @@
+﻿// See https://aka.ms/new-console-template for more information
+Console.WriteLine("### ENUM ###\n");
+
+
+
+/*
+ * ENUM
+ * Enum ou Enumeration é um tipo de dados especial definido pelo usuário
+ * Um ENUM é uma "classe" especial que é definida por um conjunto de constantes nomeadas do tipo númerico.
+ * O uso do tipo ENUM ajuda a tornar o programa mais fácil de entender e manter.
+ * 
+ * 
+ * Sintaxe
+ * Uma enumeração é definida usando a palavra-chave ENUM, diretamente dentro de um namespace, classe ou struct, e todos os nomes das constantes podem ser declarados e separados por uma vírgula.
+ * 
+ * 
+ * enum DiasDaSemana
+ * {
+ *      Segunda,
+ *      Terça,
+ *      Quarta,
+ *      Quinta,
+ *      Sexta,
+ *      Sabado,
+ *      Domingo
+ * }
+ * 
+ * enum Categorias
+ * {
+ *      Moda,
+ *      Automotivo,
+ *      Artes,
+ *      Bebidas,
+ *      Livros,
+ *      Brinquedos
+ * }
+ * 
+ * enum CodigoErro
+ * {
+ *      Nenhum = 0,
+ *      Desconhecido = 1,
+ *      ConexaoFalhou = 100,
+ *      DadosInvalidos = 200
+ * }
+ * 
+ * VALORES
+ * Por padrão, os valores associados ao membros de uma enum são do TIPO INT;
+ * O primeiro membro de um enum tem o valor 0 e o valor de cada membro seguinte é incrementado de 1. (quando nenhum valor for atribuído).
+ * enum Categorias
+ * {
+ *      Moda,           //0
+ *      Automotivo,     //1
+ *      Artes,          //2         Um ENUM é um TIPO DE valor sendo alocado na memória STACK
+ *      Bebidas,        //3
+ *      Livros,         //4
+ *      Brinquedos      //5
+ * }
+ * 
+ * Podemos atribuir valores diferentes aos membros de uma enuma.
+ * Uma alteração no valor padrão de um membro enum atribuirá automaticamente valores incrementais aos outros membros sequencialmente.
+ * 
+ * enum Categorias
+ * {
+ *  Moda,           //0
+ *  Automotivo,     //1
+ *  Artes = 5,
+ *  Bebidas,        //6
+ *  Livros,         //7
+ *  Brinquedos      //8
+ * }
+ * 
+ * enum Categorias
+ * {
+ *  Moda = 1,
+ *  Automotivo = 5,
+ *  Artes = 6,                  Podemos também atribuir valores diferentes a cada membro de uma enum
+ *  Bebidas = 10,
+ *  Livros = 12,
+ *  Brinquedos = 15
+ * }
+ * 
+ * 
+ * ACESSO:
+ * 
+ * 
+ * Um enum pode ser acessado usando a sintaxe de ponto: NOME_ENUM.MEMBRO
+ * 
+ * enum DiasDaSemana
+ * {
+ *      Segunda,        //0     Console.WriteLine(DiasDaSemana.Segunda);
+ *      Terça,          //1     Console.WriteLine(DiasDaSemana.Terça);
+ *      Quarta,         //2     Console.WriteLine(DiasDaSemana.Quarta);
+ *      Quinta,         //3     Console.WriteLine(DiasDaSemana.Quinta);
+ *      Sexta,          //4     Console.WriteLine(DiasDaSemana.Sexta);
+ *      Sábado,         //5     Console.WriteLine(DiasDaSemana.Sábado);
+ *      Domingo         //6     Console.WriteLine(DiasDaSemana.Domingo);
+ * }
+ * 
+ * 
+ * Para converter o valor do membro do enum para seu tipo númerico é preciso realizar uma conversão forçada ou cast
+ * 
+ * enum DiasDaSemana
+ * {
+ *      Segunda,        //0
+ *      Terça,          //1     int dia = (int)DiasDaSemana.Quarta;
+ *      Quarta,         //2     Console.WriteLine(DiasDaSemana.Quarta);
+ *      Quinta,         //3     Console.WriteLine($"DiasDaSemana.Quarta vale: {dia}");
+ *      Sexta,          //4
+ *      Sábado,         //5
+ *      Domingo         //6
+ * }
+ * 
+ * O enum pode ser de qualquer tipo de dados númerico como: byte, sbyte, short, ushort, int, uint, long ou ulong.
+ * Para definir o tipo basta informar o nome do tipo após o nome do enum
+ * 
+ * enum DiasDaSemana
+ * {
+ *      Segunda,    //0
+ *      Terça,      //1
+ *      Quarta,     //2
+ *      Quinta,     //3
+ *      Sexta,      //4
+ *      Sabado,     //5
+ *      Domingo     //6
+ * }
+ * 
+ * enum DiasDaSemana : byte
+ * {
+ *      Segunda,    //0
+ *      Terça,      //1
+ *      Quarta,     //2
+ *      Quinta,     //3
+ *      Sexta,      //4
+ *      Sabado,     //5
+ *      Domingo     //6
+ * }
+ * 
+ * byte dia = (byte)DiasDaSemana.Quarta;
+ */
