@@ -1,6 +1,6 @@
 ﻿namespace Exercicio_09;
 
-enum Cores
+public enum Cores
 {
     Branco = 1,
     Vermelho,

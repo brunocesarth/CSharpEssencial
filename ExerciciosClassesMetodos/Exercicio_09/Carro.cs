@@ -1,4 +1,6 @@
-﻿public class Carro
+﻿using Exercicio_09;
+
+public class Carro
 {
     public string? Modelo;
     public string? Montadora;
@@ -79,13 +81,13 @@
         ValorIpva = 4;
     }
 
-    public void ExibirInfo(string modelo, string montadora, string marca, int potencia, int ano = 2023, int cor = 0)
+    public void ExibirInfo(string modelo, string montadora, string marca, int potencia, int ano = 2023, int cor = 1)
     {
         Console.WriteLine($"{modelo}\n" +
             $"{montadora}\n" +
             $"{marca}\n" +
             $"{potencia} \n" +
-            $"{ano}" +
-            $"{cor}");
+            $"{ano}\n" +
+            $"{(Cores)Cor}");
     }
 }
