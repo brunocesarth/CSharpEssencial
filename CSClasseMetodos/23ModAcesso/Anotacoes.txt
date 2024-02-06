@@ -1,0 +1,19 @@
+﻿MODIFICADORES DE ACESSO
+
+Os modificadores de acesso são palavras-chave usadas para especificar o acesso de um membro (campo propriedade, método, etc.) ou de um tipo (classe, struct, etc.).
+
+*PUBLIC
+*PRIVATE
+*INTERNAL
+*PROTECTED
+*FILE
+
+PUBLIC - O tipo ou membro pode ser acessado por qualquer outro código no mesmo assembly ou em outro assembly que faz referência a ele.
+
+PRIVATE - O tipo ou membro pode ser acessado somente pelo código na mesma classe ou struct.
+
+INTERNAL - O tipo ou membro pode ser acessado por qualquer código no mesmo assembly, mas não de outro assembly.
+
+PROTECTED - O tipo ou membro pode ser acessado por qualquer código no assembly no qual ele é declarado ou de uma classe derivada em outro assembly.
+
+FILE - Restringe o escopo e a visibilidade de um tipo de nível superior ao arquivo no qual ele for declarado.
