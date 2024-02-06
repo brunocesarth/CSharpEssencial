@@ -17,3 +17,32 @@ INTERNAL - O tipo ou membro pode ser acessado por qualquer código no mesmo asse
 PROTECTED - O tipo ou membro pode ser acessado por qualquer código no assembly no qual ele é declarado ou de uma classe derivada em outro assembly.
 
 FILE - Restringe o escopo e a visibilidade de um tipo de nível superior ao arquivo no qual ele for declarado.
+
+################################################################################################################
+
+NIVÉIS DE ACESSIBILIDADE
+
+PUBLIC - NA PRÓPRIA CLASSE | SUBCLASSES NO ASSEMBLY | CLASSES(*) DO ASSEMBLY | SUBCLASSES FORA DO ASSEMBLY | CLASSES(*) FORA DO ASSEMBLY
+PROTECTED INTERNAL - NA PRÓPRIA CLASSE | SUBCLASSES NO ASSEMBLY | CLASSES(*) DO ASSEMBLY | SUBCLASSES FORA DO ASSEMBLY
+INTERNAL - NA PRÓPRIA CLASSE | SUBCLASSES NO ASSEMBLY | CLASSES(*) DO ASSEMBLY
+PROTECTED - NA PRÓPRIA CLASSE | SUBCLASSES NO ASSEMBLY | SUBCLASSES FORA DO ASSEMBLY
+PRIVATE PROTECTED - NA PRÓPRIA CLASSE | SUBCLASSES NO ASSEMBLY
+PRIVATE - NA PRÓPRIA CLASSE
+
+SUBCLASSE - É a classe derivada, a classe filha que foi herdada da classe pai
+ASSEMBLY - É O ARQUIVO .EXE OU .DLL GERADO PELA SUA APLICAÇÃO .NET EM CADA PROJETO DA SOLUÇÃO
+CLASSE(*), CLASSES(*) - CLASSE OU STRUCT
+
+Uma boa prática é limitar a visibilidade de seus tipos e/ou membros restringindo-os a apenas a quem  precisa realmente acessar o tipo ou membro.
+
+################################################################################################################
+
+VALOR PADRÃO DOS MODIFICADORES DE ACESSO
+
+RECURSO							|	VALOR PADRÃO
+Classe							|	Internal
+Struct							|	Internal
+Interface						|	Internal
+Enum							|	Internal
+Métodos, Campos e Propriedades	|	Private
+
