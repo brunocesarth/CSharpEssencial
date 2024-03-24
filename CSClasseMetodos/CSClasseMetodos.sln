@@ -49,7 +49,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "22Enum", "22Enum\22Enum.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "23ModAcesso", "23ModAcesso\23ModAcesso.csproj", "{39BA6BDC-BB95-494B-87D9-8BD9338D0F6D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "24TryCatch", "24TryCatch\24TryCatch.csproj", "{08577C4D-C068-4266-8DD9-AD417D28BDA0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "24TryCatch", "24TryCatch\24TryCatch.csproj", "{08577C4D-C068-4266-8DD9-AD417D28BDA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "25TiposAnonimos", "25TiposAnonimos\25TiposAnonimos.csproj", "{56E20E39-91D0-469A-86A7-1D5D3AAA3EC2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -153,6 +155,10 @@ Global
 		{08577C4D-C068-4266-8DD9-AD417D28BDA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08577C4D-C068-4266-8DD9-AD417D28BDA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08577C4D-C068-4266-8DD9-AD417D28BDA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56E20E39-91D0-469A-86A7-1D5D3AAA3EC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56E20E39-91D0-469A-86A7-1D5D3AAA3EC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56E20E39-91D0-469A-86A7-1D5D3AAA3EC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56E20E39-91D0-469A-86A7-1D5D3AAA3EC2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
