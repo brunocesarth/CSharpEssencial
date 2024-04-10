@@ -1,0 +1,77 @@
+PARTIAL CLASS - DEFINIÇÃO
+
+Quando definimos uma classe usando a sintaxe padrão da linguagem C#, temos que definir em um único arquivo físico com extensão .cs, todos os membros da classe.
+
+Nesta abordagem não podemos declarar uma classe em dois arquivos separados em um mesmo projeto.
+
+A partir da versão 2.0 a plataforma .NET introduziu o recurso chamado partial class que permite que uma classe venha a ser implementada em múltiplos arquivos físicos com extensão .cs
+
+Desta forma é possível dividir a definição de uma classe,struct,interface ou método em dois ou mais arquivos de origem.
+
+Cada arquivo de origem contém as definições de membros, tipos ou métodos e todas as partes são combinadas quando o aplicativo for compilado.
+
+
+PARTIAL CLASS - USANDO O MODIFICADOR PARTIAL
+
+Podemos criar classes, interfaces, structs e métodos parciais usando o modificador partial.
+
+MinhaPartialClassProps.cs
+public partial class MinhaPartialClasse
+{
+	public DateTime DataNascimento { get; set; }
+	public string? Nome { get; set; }
+}
+
+MinhaPartialClassMetodos.cs
+public partial class MinhaPartialClass
+{
+	public TimeSpan CalculaIdade(DateTime DataNascimento)
+	{
+		return (DateTime.Now.Date = DataNascimento);
+	}
+
+	public TimeSpan DiferencaEntreDatas(DateTime data1, DateTime data2)
+	{
+		var diferenca = data1.Subtract(data2);
+		return diferenca;
+	}
+}
+
+O compilador vai combinar todas as implementações definidas partir dos múltiplos arquivos com extensão .cs em uma única classe
+
+Classe MinhaPartialClass gerada após a compilação
+
+public class MinhaPartialClass
+{
+	public DateTime DataNascimento { get; set; }
+	public string? Nome { get; set; }
+	
+	public TimeSpan CalculaIdade(DateTime DataNascimento)
+	{
+		return (DateTime.Now.Date - DataNascimento);
+	}
+
+	public TimeSpan DiferencaEntreDatas(DateTime data1, DateTime data2)
+	{
+		var diferenca = data1.Subtract(data2);
+		return diferenca;
+	}
+}
+
+
+PARTIAL CLASS - REGRAS
+
+- Todas as definições das classes parciais devem estar no mesmo assembly e no mesmo namespace;
+- Todas as partes devem possui a mesma acessibilidade como public ou private, etc;
+- Se qualquer parte for declarada abstract então toda a classe será declarada do mesmo tipo;
+- O modificador partial somente pode ser usado antes da palavra-chave class, struct ou interface;
+- Tipos parciais aninhados são permitidos;
+- Os atributos se aplicam a todas as partes da classe;
+- As características definidas em qualquer parte estão disponíveis para todas as partes das classe;
+
+
+PARTIAL CLASS - QUANDO USAR
+
+- Ao trabalhar em projetos grandes, dividir uma classe em arquivos separados permite que vários programadores trabalhem ao mesmo tempo;
+- Ao trabalhar com código-fonte gerado automaticamente, o código pode ser adicionado à classe sem precisar recriar o arquivo de origem;
+- Ao usar geradores de código fonte (sources generators) para gerar funcionalidade adicional em uma classe;
