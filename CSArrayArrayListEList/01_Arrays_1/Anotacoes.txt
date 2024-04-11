@@ -1,0 +1,62 @@
+ARRAYS
+
+Os arrays são um conjunto de elementos de mesmo tipo de dados e de tamanho fixo.
+
+Um array de uma dimensão é também conhecido como vetor, e, um array de mais de uma dimensão e conhecido como uma matriz.
+
+- Array de uma dimensão
+- Array de duas dimensões
+- Array de três dimensões
+
+
+PORQUE USAR ARRAYS
+
+int numero = 10;
+string nome = "Maria";
+
+Como armazenar em uma variável de mesmo nome mais de um valor literal do mesmo tipo?
+
+Dez Números: 1,2,3,4,5,6,7,8,9,10
+Cinco Nomes: Maria, Eva, Pedro, Ana, Ada
+
+Resposta: Usando Arrays
+
+
+USANDO ARRAYS: DECLARANDO, ALOCANDO MEMÓRIA E INICIALIZANDO
+
+Um array é usado para armazenar mais de um valor literal do mesmo tipo em uma variável de mesmo nome.
+
+								Array com 10 elementos do tipo int
+1,2,3,4,5,6,7,8,9,10 --------> | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
+
+								Array com 5 elementos do tipo string
+Maria, Eva, Pedro, Ana, Ada -----> | Maria | Eva | Pedro | Ana | Ada |
+
+Podemos declarar uma array definindo o tipo dos seus elementos abrindo e fechando colchetes ([]) seguido do nome da variável que identifica o array
+
+TipoDados[] NomeDoArray;
+
+int[] numeros; -------------> int[] numeros = new int[10]{1,2,3,4,5,6,7,8,9,10};
+string[] nomes; ------------> string[] nomes = new string[5]{"Maria", "Eva", "Pedro", "Ana", "Ada"}
+
+
+ACESSANDO OS ELEMENTOS DE UM ARRAY
+
+Os elementos do Array podem ser acessados usando um índice.
+Um índice é um número associado a cada elemento da matriz, começando com o valor 0 e terminando com o tamanho do Array menos 1.
+
+int[] numeros = new int[]{1,2,3,4,5,6,7,8,9,10};
+
+Array com 10 elementos do tipo int
+		| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
+índice	  0   1   2   3   4   5   6   7   8    9
+
+numeros[7] --> 8
+
+string[] nomes = new string[]{"Maria", "Eva", "Pedro", "Ana", "Ada"}
+
+Array com 5 elementos do tipo string
+		| "Maria" | "Eva" | "Pedro" | "Ana" | "Ada" |
+índice	     0        1        2        3       4
+
+nomes[1] --> Eva
