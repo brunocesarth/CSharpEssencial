@@ -1,0 +1,11 @@
+APRESENTANDO A CLASSE ARRAY
+Fornece métodos para criar, manipular, pesquisar e classificar arrays, servindo assim como a classe base para os arrays
+
+1 - Reverse - Inverte a sequencia de um array unidimensional
+Ex: Array.Reverse(nome_array);
+
+2 - Sort - Ordena os itens de um array
+Ex: Array.Sort(nome_array);
+
+3 - BinarySearch - Faz a busca em um array ordenado de um valor usando o algoritmo de busca binário. Se for encontrado será retornado o valor do índice do elemento, caso contrário será retornado um número negativo.
+Ex: Array.BinarySearch(nome_array, objeto);
