@@ -1,0 +1,74 @@
+﻿Arrays com mais de uma dimensão (multidimensionais)
+Os arrays podem ter mais de uma dimensão e a linguagem C# suporta arrays com até 32 dimensões
+
+Um array com mais de uma dimensão é basicamente um array de array
+
+Um array multidimensional pode ser declarado adicionando vírgulas entre colchetes na declaração do array:
+
+Tipo[,] nome;			declara uma matriz bidimensional		Ex: int[,] array2d;
+Tipo[,,] nome;			declara uma matriz tridimensional		Ex: int[,,] array3d;
+Tipo[,,,] nome;			declara uma matriz quadridimensionaol	Ex: int[,,,] array4d;
+
+Arrays com duas dimensões (bidimensional)
+Um array bidimensional pode ser pensado como uma tabela, que tem um número x de linhas e um número y de colunas
+
+Ex: int[3,3] a;		(array bidimensional com 3 linhas e 3 colunas com o nome a)
+
+		  Col 0	  Col 1   Col 2
+linha 0	|	1	|	2	|	3	|
+linha 1	|	4	|	5	|	6	|
+linha 2	|	7	|	8	|	9	|
+
+As linhas {1,2,3}, {4,5,6} e {7,8,9} são elementos do array bidimensional de 3 linhas e 3 colunas
+
+
+Ex: int[3,3] a;
+		  Col 0	  Col 1   Col 2									Col 0		Col 1		Col 2
+linha 0	|	1	|	2	|	3	|					linha 0 |	a[0,0]	|	a[0,1]	|	a[0,2]	|
+linha 1	|	4	|	5	|	6	|					linha 1 |	a[1,0]	|	a[1,1]	|	a[1,2]	|
+linha 2	|	7	|	8	|	9	|					linha 2 |	a[2,0]	|	a[2,1]	|	a[2,2]	|
+
+Cada elemento no array a é identificado por um nome de elemento na forma a[i,j]
+- a é o nome do array
+- i e j são os índices que indicam a linha e a coluna e identificam cada elemento do array a
+	
+	a[0,0] --> 1		a[0,1] --> 2		a[1,1] --> 5		a[2,2] --> 9
+
+
+######################################################################################################
+
+Array bidimensional - Declaração
+
+int[,] array1 = new int[3,3];
+				Linhas <| |> Colunas
+
+			Col 0		Col 1		Col 2
+linha 0 |	a[0,0]	|	a[0,1]	|	a[0,2]	|
+linha 1 |	a[1,0]	|	a[1,1]	|	a[1,2]	|
+linha 2 |	a[2,0]	|	a[2,1]	|	a[2,2]	|
+
+Define o tipo dos elementos do array com sendo do tipo int
+Usa a vírgula única para indicar que o array é bidimensional
+Define que o array vai ser composto de 3 linhas e 3 colunas
+array1 é um array bidimensional com 3 elementos e cada elemento é um array com 3 elementos
+O total de elmentos que o array1 pode armazenar são elementos.(3*3)
+
+######################################################################################################
+
+Array bidimensional - Inicialização
+
+int[,] a;								a => null
+a = new int[2,2];						atribui os valores padrão
+a = new int[2,2] { {0,1} , {2,3} };		inicilização do array
+a = new int[2,2] {
+					{ 0 , 1},
+					{ 2 , 3},
+				 };
+
+									a[0,0] = 0
+|	a[0,0]	|	a[0,1]	| ---->		a[0,1] = 1
+|	a[1,0]	|	a[1,1]	|			a[1,0] = 2
+									a[1,1] = 0
+
+int[,] a = new int[2,2] { { 0, 1 }, { 2, 3 } };
+int[,] a = { { 0, 1 }, { 2, 3 } };
