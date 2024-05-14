@@ -1,0 +1,102 @@
+Apresentando o problema
+Criar um programa para calcular a soma de um número variável de números inteiros.(Criar um método que aceite um número ilimitado de argumentos.)
+Usando a sobrecarga de método
+public class Calcular
+{
+	public static int Soma(int n1, int n2)
+	{
+		return n1 + n2;
+	}
+
+	public static int Soma(int n1, int n2, int n3)
+	{
+		return n1 + n2 + n3;
+	}
+
+	public static int Soma(int n1, int n2, int n3, int n4)
+	{
+		return n1 + n2 + n3 + n4;
+	}
+	...
+}
+
+Calcular.Soma(1, 2);
+Calcular.Soma(1, 2, 3);
+Calcular.Soma(1, 2, 3, 4);
+...
+
+NÃO RESOLVE O PROBLEMA
+
+
+#################################################################################
+
+Usando um parâmetro do tipo array
+public class Calcular
+{
+	public static int Soma(int[] numeros)
+	{
+		int total = 0;
+		foreach(var numero in numeros)
+		{
+			total += numero;
+		}
+		return total;
+	}
+}
+
+int[] valores = {1, 2, 3, 4};
+var res1 = Calcular.Soma(valores);
+Console.WriteLine(res1);
+
+var res2 = Calcular.Soma(new int[] { 1, 2, 3, 4, 5, 6});
+
+Console.WriteLine(res2);
+
+RESOLVE O PROBLEMA 
+
+#################################################################################
+
+Usando o modificador params
+public class Calcular
+{
+	public static int Soma(params int[] numeros)
+	{
+		int total = 0;
+		foreach(var numero in numeros)
+		{
+			total += numero;
+		}
+		return total;
+	}
+}
+
+int[] valores = { 1, 2, 3, 4};
+
+var res1 = Calcular.Soma(valores);
+Console.WriteLine(res1);
+
+var res2 = Calcular.Soma( 1, 2, 3, 4, 5, 6);
+Console.WriteLine(res2);
+
+#################################################################################
+
+Usando a palavra-chave params, podemos especificar um parâmetro de método que aceita um número variável de argumentos. O tipo de parâmetro deve ser um array unidimensional.
+
+Características do modificador params
+- Nenhum parâmetro adicional é permitido após a palavra-chave params em uma declaração de método.
+- Apenas uma palavra-chave params é permitida em um declaração de método.
+- Deve ser o último argumento na lista de parâmetros do método.
+- Se o tipo declarado do parâmetro paramns não for um array unidimensiona, vai ocorrer o erro do compilados CS0225.
+
+MODIFICADOR PARAMS : SINTAXE E USO
+
+NomeDoMetodo(params tipo[] nomeDaVariável){}
+
+MeuMetodo(string a, int b, int c = 1, params int[] numeros){}
+			/\		/\						/\
+	Parâmetros requeridos				array de parâmetros usando params
+
+Ao chamar um método com um parâmetro params, podemos passar:
+- Uma lista separada por vírgulas de argumentos do tipo dos elementos do array;
+- Um array de argumentos do tipo especificado;
+- Se não for enviado nenhum argumento, o comprimento da lista de parâmetros será zero;
