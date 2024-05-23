@@ -1,0 +1,40 @@
+﻿Serialização na plataforma .NET
+
+A serialização é o processo de conversão do estado de um objeto em um formato que possa ser armazenado e/ou transportado.
+A serialização é o processo de conversão de um objeto em um fluxo de bytes(stream) de forma que possa ser armazenado na memória, em arquivo ou em um banco de dados.
+
+					--> Arquivo
+OBJETO ----> BYTES	-->	Banco de dados
+					-->	Memória
+
+##########################################################################
+
+Desserialização
+
+O complemento da serialização é a desserialização, que converte um fluxo de bytes (stream) em um objeto.
+A desserialização é o processo reverso da serialização.
+Juntos, esses processos permitem que os dados sejam armazenados, transferidos e recuperados com facilidade.
+
+Arquivo			-->
+Banco de Dados	-->	Bytes ---> Objeto
+Memória			-->
+
+##########################################################################
+
+Tecnologias ou tipos de serialização
+
+Serialização Binária - OBSOLETO
+Preserva a fidelidade do tipo
+Preserva o estado de um objeto
+(System.Runtime.Serialization)
+
+Serialização XML ou SOAP
+Serializa somente propriedades públicas
+Não preserva a fidelidade de tipo
+(System.Xml.Serialization)
+
+Serialização JSON
+Serializa somente propriedadades públicas
+Não preserva a fidelidade de tipo
+(System.Text.Json)
+(NewtonSoft.Json)
