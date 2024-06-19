@@ -1,0 +1,18 @@
+﻿Desserialização XML
+Criar um objeto do tipo XmlSerializer (System.Xml.Serialization) e usar o método Deserialize:
+
+using System.Xml.Serialization;
+
+string caminhoArquivo = @"d:\dados\Serializados\AlunoSerializado.xml";
+
+XmlSerializer serializer = new XmlSerializer(typeof(Aluno));
+
+using(StreamReader reader = new StreamReader(caminhoArquivo)
+{
+	var aluno = (Aluno)serialize.Deserializer(reader);
+
+	Console.WriteLine($"Aluno  XML desserializado - Id: {aluno.Id}, Nome: {aluno.Name}"
+	+ $"Email: {aluno.Email}, Idade: {aluno.Idade}");
+}
+
+Console.ReadKey();
