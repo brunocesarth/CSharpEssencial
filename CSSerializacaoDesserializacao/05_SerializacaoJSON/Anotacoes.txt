@@ -1,0 +1,43 @@
+﻿Serialização JSON
+
+public class Aluno
+{
+	public int Id { get; set; }
+	public string Name { get; set; }
+	public string Email { get; set; }
+	public int Idade;
+
+	public Aluno{}
+
+	public Aluno(int id, string name, string email, int idade)
+	{
+		Id = id;
+		Name = name;
+		Email = email;
+		Idade = idade;
+	}
+}
+
+
+Na serialização JSON é preciso ter um construtor público sem parâmentros (um construtor padrão) na classe que você deseja serializar.
+
+###########################################################################################
+
+A serialização para o formato JSON pode usar o método Serialize da classe JsonSerializer do namespace System.Text.Json
+
+using System.Text.Json;
+
+Aluno aluno1 = new Aluno(10, "Maria", "maria@yahoo.com", 17);
+
+var caminhoArquivo = @"d:\dados\Serializados\AlunoSerializado.json";
+
+using FileStream stream = new FileStream(caminhoArquivo,
+										 FileMode.OpenOrCreate,
+										 FileAccess.ReadWrite))
+{
+	JsonSerializer.Serialize(stream, aluno1);
+}
+
+Console.WriteLine("Objeto serializado para JSON com sucesso!");
+
+Console.ReadKey();

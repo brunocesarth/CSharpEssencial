@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_Conceitos", "01_Conceito
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_SerializacaoBinaria", "02_SerializacaoBinaria\02_SerializacaoBinaria.csproj", "{8A9F25EF-8AEA-4414-A8EF-8C1314FE1F73}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_SerializacaoXML", "03_SerializacaoXML\03_SerializacaoXML.csproj", "{BA997457-47D6-43EC-AFCD-9807FD47B0DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03_SerializacaoXML", "03_SerializacaoXML\03_SerializacaoXML.csproj", "{BA997457-47D6-43EC-AFCD-9807FD47B0DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_DesserializaçãoXML", "04_DesserializaçãoXML\04_DesserializaçãoXML.csproj", "{34DF49D3-208A-4A4D-A06D-2668C3572843}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04_DesserializaçãoXML", "04_DesserializaçãoXML\04_DesserializaçãoXML.csproj", "{34DF49D3-208A-4A4D-A06D-2668C3572843}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_SerializacaoJSON", "05_SerializacaoJSON\05_SerializacaoJSON.csproj", "{046E2A07-5B05-4772-84CE-40DF97E0C6BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{34DF49D3-208A-4A4D-A06D-2668C3572843}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34DF49D3-208A-4A4D-A06D-2668C3572843}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34DF49D3-208A-4A4D-A06D-2668C3572843}.Release|Any CPU.Build.0 = Release|Any CPU
+		{046E2A07-5B05-4772-84CE-40DF97E0C6BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{046E2A07-5B05-4772-84CE-40DF97E0C6BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{046E2A07-5B05-4772-84CE-40DF97E0C6BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{046E2A07-5B05-4772-84CE-40DF97E0C6BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
