@@ -1,0 +1,43 @@
+﻿Desserialização JSON
+
+public class Aluno
+{
+	public int Id { get; set; }
+	public string Name { get; set; }
+	public string Email { get; set; }
+	public int Idade;
+
+	public Aluno{}
+
+	public Aluno(int id, string name, string email, int idade)
+	{
+		Id = id;
+		Name = name;
+		Email = email;
+		Idade = idade;
+	}
+}
+
+Na serialização JSON, é preciso ter um construtor públic sem parâmetros (um construtor padrão) na classe que você deseja serializar.
+
+Podemos usar o atributo [JsonIgnore]
+Para ignorar uma propriedade na serialização
+
+#######################################################################################################
+
+Podemos usar o método Deserialize da classe JsonSerializer (System.Text.Json) para realizar a desserialização JSON
+
+using System.Text.Json
+
+var caminhoArquivo = @"d:\dados\Serializados\AlunoSerializado.json";
+
+// Lê todo o contéudo do arquivo JSON
+string jsonContent = File.ReadAllText(caminhoArquivo);
+
+// Desserializa o objeto do arquivo JSON e retorna
+var aluno = JsonSerializer.Deserialize<Aluno>(jsonContent);
+
+Console.WriteLine($"Aluno desserializado - ID: {aluno.Id}, Nome: {aluno.Nome}, " +
+				  $"Email: {aluno.Email}, Idade: {aluno.Idade}");
+
+Console.ReadKey();
