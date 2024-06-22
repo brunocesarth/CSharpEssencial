@@ -1,0 +1,53 @@
+ArrayList - Adicionar elementos
+
+O método Add permite incluir um único elemento ao final de uma ArrayList
+O método Insert(int index, Object value) permite incluir um elemento em uma posição qualquer usando o índice específico
+
+var lista = new ArrayList() { "Maria", 5, true, " ", null};
+
+	0	  1		2     3     4
+| Maria | 5 | true | " " | null |
+
+Count = 5
+Capacity = 8
+
+lista.Add(3.5);
+	0	  1		2     3     4	   5
+| Maria | 5 | true | " " | null | 3.5 |
+
+lista.Insert(2, "Paulo");
+	0	  1		2      3      4     5      6
+| Maria | 5 | Paulo | true | " " | null | 3.5 |
+Count = 7
+Capacity = 8
+
+############################################################################################################
+
+Adicionar coleção de elementos
+
+Podemos adicionar uma coleção de elementos a um ArrayList usando os métodos:
+
+AddRange(ICollection) - Adiciona a coleção de elementos ao final da ArrayList
+
+InsertRange(int index, ICollection) - Adiciona a coleção de elmentos na ArrayList na posição do índice especificado.
+
+var lista = new ArrayList() { "Maria", 5, true };
+
+	0	  1		2
+| Maria | 5 | true |
+Count = 3
+Capacity = 4
+
+int[] array1 = { 1, 2 3 };
+
+lista.AddRange(array1);
+	0	  1		2	 3   4   5
+| Maria | 5 | true | 1 | 2 | 3 |
+Count =6
+Capacity = 8
+
+lista.InsertRange(2, array1);
+	0	  1	  2	  3   4    5	 6   7   8
+| Maria | 5 | 1 | 2 | 3 | true | 1 | 2 | 3 |
+Count = 9
+Capacity = 16
