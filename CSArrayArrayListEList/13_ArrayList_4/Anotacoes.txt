@@ -1,0 +1,40 @@
+ArrayList - Verificar se um elemento esta na coleção
+
+Podemos usar o método Contains() para determinar se um elemento especificado existe na ArrayList ou não. O método retorna True se existir caso contrário retorna False.
+
+var lista = new ArrayList() { "Maria", 5, true, 4.5, null, DateTime.Now };
+
+var res1 = lista.Contains(5);				//True
+var res2 = lista.Contains(null);			//True
+
+bool res3 = lista.Contains(45);				//False
+bool res4 = lista.Contains("Mari");			//False
+
+Console.WriteLine(lista.Contains("Mari"));	//False
+
+#####################################################################################################################
+
+ArrayList - Ordenação e Remoção de todos os elementos
+
+Para ordenar uma ArrayList com elementos do mesmo tipo na ordem ascendente usamos o método Sort().(Usa o algoritmo QuickSort para classifica os elementos do ArrayList)
+
+var lista = new ArrayList(){"Maria","Ana","Zilda", "Carlos", "Diná"};
+
+| Maria | Ana | Zilda | Carlos | Diná |
+
+lista.Sort();
+| Ana | Carlos | Diná | Maria | Zilda |
+
+Para remover todos os elementos de uma ArrayList sem alterar sua capacidade usamos o método Clear()
+lista.Clear(); ---> A ArrayList lista não possui nenhum elemento (Count = 0)
+
+#####################################################################################################################
+
+ArrayList
+
+A classe ArrayList foi projetada para conter coleções heterogêneas de objetos. No entanto, nem sempre oferece o melhor desempenho.
+Para tratar uma coleção heterogênea de objetos, a recomendação é usar a coleção List<Object> e para tratar com uma coleção homogênea de objetos, a recomendação é usar a coleção List<T>
+
+A conversão de um tipo de valor para Object é conhecida como Boxing
+e
+a conversão de um Object para um tipo de valor é conhecida como Unboxing
