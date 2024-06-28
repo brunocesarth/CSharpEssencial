@@ -1,0 +1,169 @@
+﻿List<T> - Principais métodos
+
+Inclusão de itens: Add(T) e Insert(int index, T value)
+Inclusão de coleções: AddRange(ICollection) e InsertRange(int index, ICollection)
+Acesso aos elementos usando o índice: lista[indice]; (System.ArgumentOutOfRangeException)
+Iteração na lista: laço for(Count) e laço foreach
+Verificar se um elemento esta na lista: Contains(T)
+Remoção de itens> Remove(T value), RemoveAt(int index) e RemoveRange(int index, int count)
+Ordenação da lista e remoção de todos os elementos da lista: Sort() e Clear()
+
+################################################################################################
+List<T> - Adicionar elementos
+O método Add permite incluir um único elemento ao final de uma List<T>
+O método Insert(int index, Object value) permite incluir um elemento em uma posição qualquer usando um índice específico.
+
+var lista = new List<string>() { "Maria", "Ana", "Pedro", "Carlos", "Zé" };
+
+    0      1      2       3      4
+| Maria | Ana | Pedro | Carlos | Zé |
+Count = 5
+Capacity = 8
+                                    0      1      2       3      4      5
+lista.Add("Marta");             | Maria | Ana | Pedro | Carlos | Zé | Marta |
+
+                                    0      1     2      3       4      5      6
+lista.Insert(2, "Bia");         | Maria | Ana | Bia | Pedro | Carlos | Zé | Marta|
+Count = 7
+Capacity = 8
+
+################################################################################################
+List<T> - Adicionar coleção de elementos
+
+Podemos adicionar uma coleção de elementos a uma List<T> usando os métodos:
+AddRange(ICollection) - Adiciona a coleção de elementos ao final da Lista
+InsertRange(int index, ICollection) - Adiciona a coleção de elementos na Lista na posição do índice especificado.
+
+var lista = new List<string>() { "Maria", "Pedro", "Ana" };
+    0       1      2
+| Maria | Pedro | Ana |
+Count = 3
+Capacity = 4
+
+string[] array1 = { "Diná", "Carlos" };
+                                          0       1      2      3        4
+lista.AddRange(array1); ------------> | Maria | Pedro | Ana  | Diná | Carlos |
+Count = 5
+Capacity = 8
+
+                                                0      1       2        3      4     5       6
+lista.InsertRange(1, array1); ------------> | Maria | Diná | Carlos | Pedro | Ana | Diná | Carlos |
+Count = 7
+Capacity = 8
+
+################################################################################################
+List<T> - Remover elementos
+Podemos remover elementos de uma List<T> usando os métodos:
+Remove(Object value) - Remove a primeira ocorrência de um objeto específico.
+RemoveAt(int index) - Remove o elemento no índice especificado.
+RemoveRange(int index, int count) -  Remove um número definido de elementos a partir de um índice especificado.
+
+var lista = new List<int>() { 9, 5, 4, 1, 7, 8, 3, 6, 9, 0 };
+  0   1   2   3   4   5   6   7   8   9
+| 9 | 5 | 4 | 1 | 7 | 8 | 3 | 6 | 9 | 0 |
+Count = 10
+Capacity = 16
+
+                                    0   1   2   3   4   5   6   7   8
+lista.Remove(7); ---------------> | 9 | 5 | 4 | 1 | 8 | 3 | 6 | 9 | 0 |
+Count = 9
+Capacity = 16
+
+                                     0   1   2   3   4   5   6   7
+lista.RemoveAt(4); --------------> | 9 | 5 | 4 | 1 | 3 | 6 | 9 | 0 |
+Count = 8
+Capacity = 16
+
+                                            0   1   2   3   4   5
+lista.RemoveRange( 0, 2 ) --------------> | 4 | 1 | 3 | 6 | 9 | 0 |
+Count = 6
+Capacity = 16
+
+################################################################################################
+List<T> - Acesso aos elementos
+Podemos acessar e atualizar os valores dos elementos de uma List<T> usando o seu índice, da mesma forma que em um array. O índice começa de zero e aumenta em um para cada elemento subsequente.
+
+var lista = new List<string>() { "Maria", "Ana", "Marcos", "Pedro" };
+    0      1      2        3
+| Maria | Ana | Marcos | Pedro |
+
+Acessando um elemento pelo índice
+var primeiro = lista[0];
+var quarto = lista[3];
+
+Console.WriteLine(primeiro);
+Console.WriteLine(quarto);
+
+Atualizando o valor de um elemento pelo índice
+lista[0] = "Zé";
+lista[3] = "Silvia";
+
+Console.WriteLine(lista[0]);
+Console.WriteLine(lista[3]);
+
+lista[5] = "100"; --> System.ArgumentOutOfRangeException : índice fora dos limites
+
+################################################################################################
+List<T> - Iteração usando o laço for
+Podemos iterar uma List<T> usando o laço for da mesma forma que nos arrays de uma dimensão. Usamos a propriedade Count da List<T> para obter o número total de elementos.
+
+var lista = new List<string>() { "Maria", "Ana", "Pedro", "Carlos", "Zé" };
+
+    0      1      2        3     4
+| Maria | Ana | Pedro | Carlos | Zé |
+
+      inicialização  |  condição |    incremento
+for ( int i = 0 ;       i < lista.Count ; i++)
+{
+    Console.Write($"{lista[i]} ");
+}
+
+lista.Count é igual ao número total de elementos de List<T>
+
+################################################################################################
+List<T> - iteração usando o laço foreach
+Podemos iterar uma List<T> usando o laço foreach da mesma forma que em um array (não precisamos usar índices)
+
+var lista = new List<string>() { "Maria", "Ana", "Pedro", "Carlos", "Zé" };
+
+| Maria | Ana | Pedro | Carlos | Zé |
+
+foreach(var elemento in lista)
+{
+    Console.Write($"{elemento }");
+}
+
+- Não precisa definir inicialização
+- Não precisa definir condição
+- Usa a palavra-chave var para inferir o tipo de cada elemento
+- Usa a palavra-chave in para iterar sobre cada elemento da coleção
+- O número de iteração é igual ao total de elementos da coleção
+
+################################################################################################
+List<T> - Verificar se um elmento esta na coleção
+Podemos usar o método Contains() para determinar se um elemento especificado existe na List<T> ou não. O método retorna True se existir caso contrário retorna False.
+
+var lista = new List<string>() { "Maria", "Ana", "Pedro", "Carlos", "Zé" };
+
+var res1 = lista.Contains("Ana");  // True
+var res2 = lista.COntains("Zé");   // True
+
+bool res3 = lista.Contains("Ze");   //False
+bool res4 = lista.Contains("Mari"); //False
+
+Console.WriteLine(lista.Contains("Mari"));  //False;
+
+################################################################################################
+List<T> - Ordenação e Remoção de todos os elementos
+Para ordenar uma List<T> com elementos do mesmo tipo na ordem ascendente usamos o método Sort().(Usa o algoritmo QuickSort para classificar os elementos da List<T>)
+
+var lista = new List<string>() { "Maria", "Ana", "Zilda", "Carlos", "Diná" };
+
+| Maria | Ana | Zilda | Carlos | Diná |
+
+lista.Sort();
+| Ana | Carlos | Diná | Maria | Zilda |
+
+Para remover todos os elementos de uma List<T> sem alterar sua capacidade usamos o método Clear()
+
+lista.Clear(); -----------------> A List<T> lista não possui nenhum elemento(Count = 0)
