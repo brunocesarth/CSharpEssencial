@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 
-var lista = new ArrayList() { "Maria", 5, true, 4.5, null, DateTime.Now };
+.var lista = new ArrayList() { "Maria", 5, true, 4.5, null, DateTime.Now };
 
 //Verificar se um elemento existe na coleção
 
