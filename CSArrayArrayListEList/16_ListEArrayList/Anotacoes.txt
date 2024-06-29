@@ -1,0 +1,86 @@
+﻿List<T> - Apresenta os mesmos métodos e comportamentos da ArrayList
+
+Inclusão de itens: Add(T) e Insert(int index, T value)
+Inclusão de coleções: AddRange(ICollection) e InsertRange(int index, ICollection)
+Acesso as elementos usando o índice: lista[indice]; (System.ArgumentoOutOfRangeException)
+Iterar na lista: laço for (Count) e laço foreach
+Verificar se um elemento esta na lista: Contains(T)
+Remoção de itens: Remove(T value), RemoveAt(int index) e RemoveRange(int index, int count)
+Ordenação da lista e remoção de todos os elementos da lista: Sort() e Clear()
+
+##################################################################################################################################
+O comportamento de List<T> comparado com ArrayList: Conceitos
+
+Value Type: Armazena diretamente os dados atribuídos na memória Stack.
+Exemplos: int, double, float, long, DateTime, struct, etc.
+
+Reference Type: Armazena uma referência para os dados atribuídos na memória Heap.
+Exemplos: string, Array, ArrayList, List<T>, class, classes definidas pelo usuário, etc.
+
+Boxing: É a conversão de um Value Type para um Reference Type.
+int num = 23;
+Object obj = num; // Boxing
+
+Unboxing: É quando um Reference Type(object) volta a ser um Value Type.
+int num = 23;
+Object obj = num;		// Boxing
+int i = (int)obj;		// Unboxing
+
+##################################################################################################################################
+O compartamento da ArrayList
+
+Uma coleção ArrayList pode armazenar elementos de diversos tipos de dados: Value Type e Reference Type.
+Qualquer tipo de referência ou valor que é adicionado a um ArrayList é implicitamente convertido para System.Object.
+Se os itens são tipos de valor, eles devem sofrer um boxing quando adicionado à coleção, e unboxing quando eles são recuperados da coleção.
+A coersão, boxing e unboxing são operações que degradam o desempenho, e o efeito de realizar as operações de boxing e unboxing pode ser bastante significativo em cenários onde devemos percorrer grandes coleções.
+A coleção List<T> é uma coleção de objetos fortemente tipados onde T representa o tipo dos dados dos elementos que serão armazenados na coleção.
+O parâmetro de tipo T pode ser um tipo por valor como um int, double, float, etc., ou um tipo de referência como uma string, uma classe, etc.
+Na coleção List<T> não existe a necessidade de que todos os itens sejam convertidos para Object e também ela permite que o compilador faça a verificação de tipo.
+Desta forma ao incluir e recuperar elementos de uma List<T> não são realizadas as operações de boxing e unboxing.
+
+##################################################################################################################################
+O comportamento de List<T> comparado com ArrayList
+
+ArrayList
+################################################
+#	ArrayList lista = new ArrayList();		   #
+#	lista.Add(3);		// boxing			   #
+#	lista.Add(105);		// boxing			   #
+#											   #
+#	//recuperar valor						   #
+#	var elemento = lista[0];		//unboxing #
+#	int item = (int)lista[1];		//unboxing #
+################################################
+
+List
+################################################
+#	List<int> lista = new List<int>()		   #
+#	lista.Add(3);		// sem boxing		   #
+#	lista.Add(105);		// sem boxing		   #
+#											   #
+#	//recuperar valor						   #
+#	var elemento = lista[0];   // sem unboxing #
+#	int item = lista[1];	   // sem unboxing #
+################################################
+
+Podemos criar uma lista de itens usando a coleção List<T> ao invés de usar uma ArrayList que além de ser mais segura do que o ArrayList é também mais rápida, especialmente quando os itens da lista são tipos de valor.;\
+
+##################################################################################################################################
+
+#################################################################################################
+# List<T>										 #	ArrayList								    #
+#################################################################################################
+# System.Collections.Generic					 #	System.Collection						    #
+#################################################################################################
+# Coleção de objetos fortemente tipados	 		 # Coleção que pode armazenar itens de diversos #
+#   											 # tipos de dados. NÃO é fortemente tipada.	    #
+#################################################################################################
+# Não realização operação de boxing e unboxing   # Realiza operação de boxing e unboxing		#
+#################################################################################################
+# Apresenta melhor desempenho					 # Apresenta um desempenho menor			    #
+#################################################################################################
+# Apresenta segurança de tipo					 # Não apresenta segurança de tipo			    #
+#################################################################################################
+# Recomendada para tratar objetos homogêneos e   # Seu uso deve ser evitado					    #
+# heterogêneos								     #											    #
+#################################################################################################
