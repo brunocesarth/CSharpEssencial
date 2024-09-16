@@ -39,7 +39,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "17_List_MetodoFind", "17_Li
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "18_MetodoFind_ExpressaoLambda", "18_MetodoFind_ExpressaoLambda\18_MetodoFind_ExpressaoLambda.csproj", "{4134F2A4-FF51-4EC0-BBF9-72C9261490DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "19_ListTxIEnumerable", "19_ListTxIEnumerable\19_ListTxIEnumerable.csproj", "{94DF693F-33A5-43E7-8BCB-EDE5C800B727}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "19_ListTxIEnumerable", "19_ListTxIEnumerable\19_ListTxIEnumerable.csproj", "{94DF693F-33A5-43E7-8BCB-EDE5C800B727}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "20_ExerciciosListT", "20_ExerciciosListT\20_ExerciciosListT.csproj", "{23DA39B3-28FE-45A3-A2FB-83AAA0702D46}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +125,10 @@ Global
 		{94DF693F-33A5-43E7-8BCB-EDE5C800B727}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94DF693F-33A5-43E7-8BCB-EDE5C800B727}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94DF693F-33A5-43E7-8BCB-EDE5C800B727}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23DA39B3-28FE-45A3-A2FB-83AAA0702D46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23DA39B3-28FE-45A3-A2FB-83AAA0702D46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23DA39B3-28FE-45A3-A2FB-83AAA0702D46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23DA39B3-28FE-45A3-A2FB-83AAA0702D46}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
