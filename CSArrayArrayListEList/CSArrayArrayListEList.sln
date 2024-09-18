@@ -43,7 +43,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "19_ListTxIEnumerable", "19_
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "20_ExerciciosListT", "20_ExerciciosListT\20_ExerciciosListT.csproj", "{23DA39B3-28FE-45A3-A2FB-83AAA0702D46}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "21_Indexadores", "21_Indexadores\21_Indexadores.csproj", "{8D001D77-DF58-4802-BE23-23CCF14CDF13}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "21_Indexadores", "21_Indexadores\21_Indexadores.csproj", "{8D001D77-DF58-4802-BE23-23CCF14CDF13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "22_ClasseRandom", "22_ClasseRandom\22_ClasseRandom.csproj", "{4086E086-27BF-4B13-A030-78E079123A3D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -135,6 +137,10 @@ Global
 		{8D001D77-DF58-4802-BE23-23CCF14CDF13}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D001D77-DF58-4802-BE23-23CCF14CDF13}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D001D77-DF58-4802-BE23-23CCF14CDF13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4086E086-27BF-4B13-A030-78E079123A3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4086E086-27BF-4B13-A030-78E079123A3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4086E086-27BF-4B13-A030-78E079123A3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4086E086-27BF-4B13-A030-78E079123A3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
