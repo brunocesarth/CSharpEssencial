@@ -1,0 +1,69 @@
+﻿Indexadores - definição
+
+"Os indexadores permitem que as instâncias de uma classe ou struct sejam indexadas como um array. Eles lembram as propriedades mas seus assessores (get,set) recebem parâmetros."
+
+Um indexador é um membro da classe que permite acessar uma variável de membro da classe ou struct usando os recursos de um array.
+
+Quando você define um indexador para uma classe, essa classe se comporta como um array virtual e podemos acessar a instância da classe usando o operador de acesso ao array ([]) e também usar índices para acessar e atribuir valores como nos arrays.
+
+
+###############################################################################################################
+
+Indexadores - sintaxe
+
+Para declarar um indexador em uma classe ou struct, use a palavra-chave this:
+
+#############################################################
+#	public int this [ínt index] // declaração do indexador	#
+#	{														#
+#		get{...}											#
+#		set{...}											#
+#	}														#
+#############################################################
+
+
+- Declaramos um indexador como um método passando um modificador de acesso(public, private, protected ou internal) seguido de um valor de retorno (não pode ser void).
+- O nome do indexador será a palavra reservada this;
+- A lista de parâmetros de entrada devem ser envolvida em colchetes[];
+- Ao final basta definir os acessores get e set para definir a lógica de acesso retornando e atribuindo um valor.
+
+###############################################################################################################
+
+Indexadores - exemplo
+
+
+#################################################
+#	public class Time							#
+#	{											#
+#		string[] valor = new string[10];		#
+#												#
+#		public string this[ínt i]				#
+#		{										#
+#			get									#
+#			{									#
+#				if(i >= 0 && i < valor.Length)	#
+#				{								#
+#					return valor[i];			#
+#				}								#
+#				return "Erro";					#
+#			}									#
+#			set									#
+#			{									#
+#				if(i >= 0 && i < valor.Length)	#
+#				{								#
+#					valor[i] = value;			#
+#				}								#
+#			}									#
+#		}										#
+#	}											#
+#################################################
+
+A classe Time contém um indexador que possui um método com get para obter valores e set para atribuir valores.
+Os acessores (get e set) possuem lógica que assegura que o array não será acessado fora dos limites(10 elementos).
+
+- Um valor get retorna um valor. Um acessor set define um valor.
+- A palavra-chave this é usada para definir os indexadores.
+- A palavra-chave value é usado para definir o valor que esta sendo atribuído pelo indexador set.
+- Um indexador não pode ser estático.
+
+A utilidade de um indexador é fornecer uma sintaxe para acessar, através do índice, itens de um objeto que represeta uma coleção.
