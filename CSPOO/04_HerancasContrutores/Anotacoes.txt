@@ -1,0 +1,8 @@
+Herança : Construtores
+
+A classe base e a classe derivada podem possuir seus próprios construtores.
+A classe derivada não herda o construtor da classe base mas pode invocá-lo.
+Ao criar uma instância da classe derivada o construtor da classe base sem parâmetros será invocado primeiro e depois será invocado o construtor da classe derivada.
+
+A palavra-chave base é usada para acessar membros da classe base de dentro de uma classe derivada:
+- Ela é usada para especificar qual construtor de classe base deve ser chamado ao criar instâncias da classe derivada;
