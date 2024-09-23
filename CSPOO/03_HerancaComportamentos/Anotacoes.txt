@@ -1,0 +1,6 @@
+Herança: Modifmicadores de acesso.
+
+Um membro com o modificador protected é acessível dentro da sua classe e por instâncias das classes derivadas.
+Uma classe derivada tem acesso aos membros definidos com o modificador public, internaç, protected e protected internal de uma classe base.
+Membros com o modificador private embora sejam herdados não podem ser acessados pela classe derivada(subclasse).
+Os membros privados estão presentes na classe derivada de forma a atuar e fazer o mesmo trabalho que fariam na própria classe base.
