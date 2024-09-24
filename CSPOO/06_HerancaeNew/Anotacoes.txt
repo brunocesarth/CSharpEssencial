@@ -1,0 +1,9 @@
+﻿Herança: O modificador new
+
+Se um membro de uma classe derivada tiver o mesmo nome do membro de uma classe base, o compilador vai emitir o aviso:
+
+| 'member1' hides inherited member 'member2'. Use the new keyword if hiding was intented. |
+
+Este aviso indica que o membro da classe derivada oculta o membro da classe base.
+Quando um método da classe derivada oculta um membro da classe base, este membro substitui(override) o membro da classe base.
+Se você realmente deseja ocultar um membro da classe base, pode usar o modificador new par ao membro da subclasse.
