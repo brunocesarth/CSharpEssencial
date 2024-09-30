@@ -1,0 +1,22 @@
+Herança: Virtual e Override
+Se você quiser que um membro da subclasse substitua um membro com o mesmo nome na classe base deve fazer o seguinte:
+
+1 - Usar o modificador virtual na declaração do membro da classe base
+#########################################################################
+#	class Pessoa														#
+#	{																	#
+#		public string? Nome { get; set; }								#
+#		public virtual string Saudacao() => $"Oi, Eu sou o(a) {Nome}.";	#
+#	}																	#
+#########################################################################
+
+2 - Usar o modificador override na declaração do membro da classe derivada
+
+#################################################################
+#	class Aluno : Pessoa										#
+#	{															#
+#		public string? Curso { get; set; }						#
+#		public override string Saudacao()						#
+#			=> $"Oi, Eu sou o(a) {Nome} do curso de: {Curso}.";	#
+#	}															#
+#################################################################
